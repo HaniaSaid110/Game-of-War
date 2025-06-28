@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of War - Card game</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Game of War.css">
+</head>
+<body>
+    <section class="text-white">
+        <div class="container h-100 d-flex flex-column justify-content-between">
+            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                <ol class="breadcrumb fs-5 d-flex flex-row justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="link-underline link-underline-opacity-0 text-light">Home</a></li>
+                    <li class="breadcrumb-item"><a href="about-game.html" class="link-underline link-underline-opacity-0 text-light">About</a></li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-md-12 d-flex flex-row">
+                    <button id="new-deck" class="btn btn-warning align-self-start fs-5 fw-medium">New Deck</button>
+                    <span class="remaining-cards m-2"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <h1>Game of War</h1>
+                </div>
+            </div>
+            <div class="row mt-4 text-center">
+                <div class="col-12">
+                    <h3 class="align-self-end" id="computer-score-text">Computer score: 0</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <div class="card-deck border border-2 border-black rounded-2 m-auto">
+                        <img src="" alt="" class="w-100 h-100" id="computer-card">
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="card-deck border border-2 border-black rounded-2 m-auto">
+                        <img src="" alt="" class="w-100 h-100" id="your-card">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="align-self-end" id="your-score-text">Your score: 0</h3>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 d-flex flex-column">
+                    <button id="draw-cards" class="btn btn-warning fs-5 fw-medium">Draw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Game of War.js"></script>
+</body>
+</html>
