@@ -2,7 +2,7 @@ section{
     background-image: url(../images/istockphoto-1206505233-612x612.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100dvh;
 }
 .card-deck{
     height: 120px;
