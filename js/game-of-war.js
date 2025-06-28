@@ -14,7 +14,6 @@ function handleClick(){
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/`)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
         remainingCards.textContent = `Remaining cards: ${data.remaining}`;
         deckId = data.deck_id;
         computerScore = 0;
@@ -38,7 +37,6 @@ drawCards.addEventListener(`click`, function(){
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
         computerCard.src = data.cards[0].image;
         yourCard.src = data.cards[1].image;
         remainingCards.textContent = `Remaining cards: ${data.remaining}`;
@@ -64,7 +62,6 @@ function determineCardWinner(card1, card2){
     let cardValues = [`2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `JACK`, `QUEEN`, `KING`, `ACE`];
     let card1Value = cardValues.indexOf(card1.value);
     let card2Value = cardValues.indexOf(card2.value);
-    console.log(card1Value, card2Value);
     if(card1Value > card2Value){
         computerScore++;
         computerScoreText.textContent = `Computer score: ${computerScore}`;
