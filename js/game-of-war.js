@@ -37,8 +37,12 @@ drawCards.addEventListener(`click`, function(){
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
     .then(res => res.json())
     .then(data => {
-        computerCard.src = data.cards[0].image;
-        yourCard.src = data.cards[1].image;
+        computerCard.innerHTML = `
+            <img src="${data.cards[0].image}" alt="" class="w-100 h-100">
+        `;
+        yourCard.innerHTML = `
+            <img src="${data.cards[1].image}" alt="" class="w-100 h-100">
+        `;
         remainingCards.textContent = `Remaining cards: ${data.remaining}`;
         let winner = determineCardWinner(data.cards[0], data.cards[1]);
         heading.textContent = winner;
