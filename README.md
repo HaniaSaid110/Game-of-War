@@ -2,6 +2,8 @@
 
 A simple web-based implementation of the classic "Game of War" card game.
 
+**This project is part of Scrimba's API Basics 3: Build a Game (Async JS, Callbacks & Promises) course.**
+
 ## How to Play
 
 1. Click **New Deck** to start a new game and shuffle the cards.
