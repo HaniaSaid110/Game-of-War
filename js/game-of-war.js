@@ -20,8 +20,8 @@ function handleClick(){
         yourScore = 0;
         computerScoreText.textContent = `Computer score: ${computerScore}`;
         yourScoreText.textContent = `Your score: ${yourScore}`;
-        computerCard.src = "";
-        yourCard.src = "";
+        computerCard.innerHTML = ``;
+        yourCard.innerHTML = ``;
         heading.textContent = `Game of War`;
         drawCards.disabled = false;
     })
